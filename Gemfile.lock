@@ -49,6 +49,7 @@ DEPENDENCIES
   rack-protection
   sinatra
   slack-ruby-client
+  ruby2_keywords
 
 RUBY VERSION
    ruby 3.1.0p0
