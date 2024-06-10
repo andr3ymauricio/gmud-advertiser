@@ -7,7 +7,7 @@ GEM
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
       faraday-httpclient (~> 1.0)
-      faraday-net_http (~> 2.0)
+      faraday-net_http (~> 3.2)
       faraday-net_http_persistent (~> 1.2)
       faraday-patron (~> 1.0)
       faraday-rack (~> 1.0)
@@ -35,7 +35,7 @@ GEM
     slack-ruby-client (0.16.0)
       concurrent-ruby
       faraday (>= 1.0, < 2.0)
-      faraday-net_http (~> 2.0)
+      faraday-net_http (~> 3.2)
       multi_json (~> 1.11, >= 1.11.2)
     tilt (2.0.11)
 
