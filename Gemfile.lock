@@ -43,6 +43,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  faraday
   mustermann
   rack
   rack-protection
