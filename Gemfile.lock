@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     concurrent-ruby (1.1.10)
-    faraday (1.10.0)
+    faraday (2.9.1)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
