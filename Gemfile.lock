@@ -43,7 +43,6 @@ GEM
       hashie (>= 0)
       multi_json (~> 1.11, >= 1.11.2)
       websocket-driver (>= 0)
-    tilt (2.0.11)
 
 PLATFORMS
   ruby
