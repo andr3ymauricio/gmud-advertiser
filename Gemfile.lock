@@ -23,6 +23,9 @@ GEM
     ffi (1.15.5)
     multi_json (1.15.0)
     multipart-post (2.2.3)
+    mustermann (1.1.1)
+    rack (2.2.3)
+    rack-protection (3.5.1)
     sinatra (3.0.5)
       mustermann (~> 3.0)
       rack (>= 2.2.4)
@@ -31,15 +34,17 @@ GEM
     slack-ruby-client (0.16.0)
       concurrent-ruby
       faraday (>= 1.0, < 2.0)
-      faraday-net_http (~> 1.0)
+      faraday-net_http (~> 2.0)
       multi_json (~> 1.11, >= 1.11.2)
     tilt (2.0.11)
 
 PLATFORMS
   ruby
-  x86_64-linux
 
 DEPENDENCIES
+  mustermann
+  rack
+  rack-protection
   sinatra
   slack-ruby-client
 
