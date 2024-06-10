@@ -40,9 +40,9 @@ GEM
       faraday-net_http (~> 2.0)
       faraday_middleware (>= 0)
       multi_json (~> 1.11, >= 1.11.2)
-      #gli (>= 0)
-      #hashie (>= 0)
-      #websocket-driver (>= 0)
+      # gli (>= 0)
+      # hashie (>= 0)
+      # websocket-driver (>= 0)
     tilt (2.0.11)
 
 PLATFORMS
