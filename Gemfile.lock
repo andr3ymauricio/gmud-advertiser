@@ -50,17 +50,17 @@ PLATFORMS
 
 DEPENDENCIES
   faraday
+  ruby2_keywords
   mustermann
   rack
+  base64
   rack-protection
   sinatra
-  slack-ruby-client
-  ruby2_keywords
-  base64
   faraday_middleware
   gli
   hashie
   websocket-driver
+  slack-ruby-client
 
 RUBY VERSION
    ruby 3.1.0p0
