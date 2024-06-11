@@ -56,6 +56,11 @@ DEPENDENCIES
   sinatra
   slack-ruby-client
   ruby2_keywords
+  base64
+  faraday_middleware
+  gli
+  hashie
+  websocket-driver
 
 RUBY VERSION
    ruby 3.1.0p0
