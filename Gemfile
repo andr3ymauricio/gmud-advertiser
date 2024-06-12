@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.1.0'
+ruby '2.7.2'
 
 gem 'faraday'
 gem 'ruby2_keywords'
