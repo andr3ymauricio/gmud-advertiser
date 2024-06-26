@@ -13,7 +13,7 @@ class SlackClient
     return unless gmud_hash
 
     post_notification(
-      'https://hooks.slack.com/services/',
+      'https://hooks.slack.com/services/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',
       ENDPOINT,
       { 'text': slack_message }.to_json
     )
