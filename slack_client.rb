@@ -3,7 +3,8 @@ require_relative 'api_client.rb'
 class SlackClient
   include ApiClient
 
-  ENDPOINT = "#{ENV.fetch('SLACK_ENDPOINT')}".freeze
+  #ENDPOINT = "#{ENV.fetch('SLACK_ENDPOINT')}".freeze
+   ENDPOINT = "#{ENV.fetch('DISCORD_WEBHOOK_URL')}".freeze
 
   def initialize(gmud_hash)
     @gmud_hash = gmud_hash
@@ -13,7 +14,8 @@ class SlackClient
     return unless gmud_hash
 
     post_notification(
-      'https://hooks.slack.com/services/',
+      #'https://hooks.slack.com/services/',
+      'https://discord.com/api/webhooks/',
       ENDPOINT,
       { 'text': slack_message }.to_json
     )
