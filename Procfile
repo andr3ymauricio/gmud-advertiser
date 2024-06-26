@@ -1,1 +1,1 @@
-web: ruby app.rb -p $PORT
+web: ruby gmud_advertiser.rb -p $PORT
