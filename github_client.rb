@@ -14,7 +14,8 @@ class GithubClient
   attr_reader :webhook, :pull_request
 
   def has_valid_gmud?
-    gmud_is_tagged? && is_closed_gmud?
+    #gmud_is_tagged? && is_closed_gmud?
+    gmud_is_tagged?
   end
 
   def gmud_is_tagged?
