@@ -3,8 +3,8 @@ require_relative 'api_client.rb'
 class SlackClient
   include ApiClient
 
-  #ENDPOINT = "#{ENV.fetch('SLACK_ENDPOINT')}".freeze
-   ENDPOINT = "#{ENV.fetch('DISCORD_WEBHOOK_URL')}".freeze
+  ENDPOINT = "#{ENV.fetch('SLACK_ENDPOINT')}".freeze
+  
 
   def initialize(gmud_hash)
     @gmud_hash = gmud_hash
@@ -14,8 +14,7 @@ class SlackClient
     return unless gmud_hash
 
     post_notification(
-      #'https://hooks.slack.com/services/',
-      'https://discord.com/api/webhooks/',
+      'https://hooks.slack.com/services/',
       ENDPOINT,
       { 'text': slack_message }.to_json
     )
@@ -35,21 +34,27 @@ class SlackClient
 
   def raw_template
     <<-SLACK_MESSAGE
-<#{gmud_hash[:link]}|*#{gmud_hash[:repository]} - GMUD #{gmud_hash[:number]}*>
+    
+    
+<#{gmud_hash[:link]}|*GMUD @ #{gmud_hash[:repository]} # #{gmud_hash[:number]}*> :verified-blue:
 
-*O que mudou* :repeat:
+
+:check-verde: *O que mudou* 
+
 #{gmud_hash[:raw_description]}
     SLACK_MESSAGE
   end
 
   def full_template
     <<-SLACK_MESSAGE
-<#{gmud_hash[:link]}|*#{gmud_hash[:repository]} - GMUD #{gmud_hash[:number]}*>
+    
+<#{gmud_hash[:link]}|*GMUD @ #{gmud_hash[:repository]} # #{gmud_hash[:number]}*> :verified-blue:
 
-*O que mudou* :repeat:
+
+:check-verde: *O que mudou*
 #{gmud_hash[:changes]}
 
-*Riscos* :warning:
+:warning-sync: *Riscos* 
 #{gmud_hash[:riskiness]}
     SLACK_MESSAGE
   end
